@@ -16,5 +16,6 @@ $ oc new-app php~https://github.com/ffirg/tooling-assessment
 ## Running an Assessment
 Go to the openshift console (can fire this up from the CLI using 'minishift console')
 Click on the tooling-assessment project
-Click on the web-server deployment and create a Route (using all the defaults)
+Click on Overview.
+Create a Route (using all the defaults)
 Click on the openshift route exposed by the service and fill out the survey. Job done!
