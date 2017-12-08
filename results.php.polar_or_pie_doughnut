@@ -4,7 +4,6 @@
     <script src="Chart.bundle.js"></script>
     <script src="utils.js"></script>
     <script src="raphael-2.1.4.min.js"></script>
-    <script src="justgage.js"></script>
     <title>Red Hat Management Tooling Assessment</title>
 <style>
 
