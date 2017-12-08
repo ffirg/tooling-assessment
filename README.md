@@ -6,6 +6,12 @@ Create a natty diagram, overlay RH products and make suggestions around moving t
 
 Designed to be run inside a [minishift] container service.
 
+### Quick and Dirty
+```
+$ ./startup.sh
+```
+
+### Longer Option!
 ```
 $ minishift start
 $ oc login -u developer
