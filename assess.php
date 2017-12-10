@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,19 +12,19 @@ session_start();
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
+
   <script>
   $( function() {
     $( "#tabs" ).tabs();
   } );
   </script>
-  
+
     <script>
   $( function() {
     $( "input" ).checkboxradio();
   } );
   </script>
-  
+
   <style>
       #locationField, #controls {
         position: relative;
@@ -67,19 +64,16 @@ session_start();
         height: 20px;
         margin-bottom: 2px;
       }
-      .page { position: absolute; 
-      	top: 10; 
-      	left: 100; 
-      	visibility: hidden; 
-      	} 
-      	
-legend {
+      .page { position: absolute;
+      	top: 10;
+      	left: 100;
+      	visibility: hidden;
+      	}
 
+legend {
 }
 
 p { font-family: 'Inder', sans-serif; line-height: 28px; margin-bottom: 15px; color: #666; }
-
-
 
 label {
 
@@ -88,17 +82,12 @@ label {
 input {
   border-radius: 15px;
   margin: 10px;
-} 	
+}
 
 h3 { color: #7c795d; font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 400; line-height: 32px; margin: 0 0 24px; }
 
+    </style>
 
-
-    </style>		
-    
-
-    
-    
 </head>
 <body>
 
@@ -115,30 +104,16 @@ h3 { color: #7c795d; font-family: 'Source Sans Pro', sans-serif; font-size: 28px
 		</div>
 		<div class="collapse navbar-collapse" id="navbar1">
 			<ul class="nav navbar-nav navbar-right">
-				<?php if (isset($_SESSION['usr_id'])) { ?>
-				<li><p class="navbar-text">Signed in as <?php echo $_SESSION['usr_name']; ?></p></li>
-				<li><a href="logout.php">Log Out</a></li>
-				<?php } else { ?>
-				<li><a href="login.php">Login</a></li>
-
-				<?php } ?>
-
 			</ul>
 		</div>
 	</div>
 </nav>
 
-<?php
-if(isset($_SESSION['usr_id'])) {
-include 'dbconnect.php';
-$userId = $_SESSION['usr_id'];
+  <div class="container">
 
-?>
-    <div class="container">
-
-      <!-- Main component for a primary marketing message or call to action -->
+<!-- Main component for a primary marketing message or call to action -->
 <!--      <div class="jumbotron"> -->
-<form id="innovate-form" action="tmp.php">
+<form id="tooling-assessment-form" action="tmp.php">
 
 <div id="tabs">
   <ul>
@@ -160,7 +135,7 @@ $userId = $_SESSION['usr_id'];
 
   <div id="tabs-1">
   <h3>Management Tooling Assessment.</h3>
-  
+
     <p>
 <b>AIM</b>: Help to assess current and future requirements around managing private, hybrid and cloud based infrastructure.
 </p>
@@ -208,20 +183,20 @@ To complete the assessment, please use the tabs and check the comment which bett
   </div>
 
   <div id="tabs-3">
-<div class="widget"> 
+<div class="widget">
   <fieldset>
     <legend>Content Management</legend>
     <p>This should include things like single sources of truth for application code, centralised OS, patch and config repositories.</p>
     <p><b>Current Position (0-10): </b><input type="number" name="d1" min="0" max="10"></p>
 <p><label>Comments: </label><input type="text" size="80" name="d1-text"></p>
   </fieldset>
- 
+
   <fieldset>
     <p><b>Future Position (0-10): </b><input type="number" name="o1" min="0" max="10"></p>
 <p>Best practices: SCM, central regularly and automatically synchronised repos, changes controlled.</p>
 <p><label>Comments: </label><input type="text" size="80" name="o1-text"></p>
-  </fieldset> 
-</div>    
+  </fieldset>
+</div>
     </p>
   </div>
 
@@ -230,10 +205,10 @@ To complete the assessment, please use the tabs and check the comment which bett
     <legend>Provisioning</legend>
     <p><b>Current Position (0-10): </b><input type="number" name="d2" min="0" max="10"></p>
   </fieldset>
- 
+
   <fieldset>
     <p><b>Future Position (0-10): </b><input type="number" name="o2" min="0" max="10"></p>
-  </fieldset> 
+  </fieldset>
   </div>
 
   <div id="tabs-5">
@@ -351,9 +326,8 @@ To complete the assessment, please use the tabs and check the comment which bett
 <?php    }
 ####  End of Logged on bit ######
 ?>
- 
+
 
 
 </body>
 </html>
-
