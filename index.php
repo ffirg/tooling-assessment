@@ -121,9 +121,9 @@ h3 { color: #7c795d; font-family: 'Source Sans Pro', sans-serif; font-size: 28px
 
     <div class="container">
 
-      <!-- Main component for a primary marketing message or call to action -->
+<!-- Main component for a primary marketing message or call to action -->
 <!--      <div class="jumbotron"> -->
-<form id="innovate-form" action="tmp.php">
+<form id="tooling-assessment-form" action="tmp.php">
 
 <div id="tabs">
   <ul>
@@ -151,7 +151,7 @@ h3 { color: #7c795d; font-family: 'Source Sans Pro', sans-serif; font-size: 28px
 </p>
 
 <p>
-To complete the assessment, please use the tabs and check the comment which better suits your environment.  Once complete, click "Submit" from the Submit Tab.
+To complete the assessment, please use the tabs and fill out all information. Once complete, click "Submit".
 </p>
   </div>
 
@@ -198,13 +198,13 @@ To complete the assessment, please use the tabs and check the comment which bett
     <legend>Content Management</legend>
     <p>This should include things like single sources of truth for application code, centralised OS, patch and config repositories.</p>
     <p><b>Current Position (0-10): </b><input type="number" name="d5" min="0" max="10"></p>
-<p><label>Comments: </label><input type="text" name="d5-text"></p>
+<p><label>Comments: </label><input type="textarea" cols="30" rows="2" name="d5-text"></p>
   </fieldset>
  
   <fieldset>
     <p><b>Future Position (0-10): </b><input type="number" name="o5" min="0" max="10"></p>
-<p>Guidance for scoring: ...</p>
-<p><label>Comments: </label><input type="text" name="o5-text"></p>
+<p>Best practices include: centralised SCM systems, CI/CD pipelining, automated content updates/refresh.</p>
+<p><label>Comments: </label><input type="textarea" cols="30" rows="2" name="o5-text"></p>
   </fieldset> 
 </div>    
     </p>

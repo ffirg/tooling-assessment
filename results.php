@@ -210,79 +210,12 @@ table {
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#analysis-dialog" ).dialog({
-      autoOpen: false,
-      show: {
-        effect: "blind",
-        duration: 1000
-      },
-      hide: {
-        effect: "drop",
-        duration: 1000
-      },
-      minWidth: 1000
-    });
- 
-    $( "#analysis-opener" ).on( "click", function() {
-      $( "#analysis-dialog" ).dialog( "open" );
-    });
-  } );
-  </script>
-
-  <script>
-  $( function() {
-    $( "#workshop-dialog" ).dialog({
-      autoOpen: false,
-      show: {
-        effect: "blind",
-        duration: 1000
-      },
-      hide: {
-        effect: "drop",
-        duration: 1000
-      },
-      minWidth: 400
-    });
- 
-    $("#workshop-opener" ).on( "click", function() {
-      $("#workshop-dialog" ).dialog( "open" );
-    });
-
-  } );
-  </script>
-
-  <script>
-  $( function() {
-    $( "#priorities-dialog" ).dialog({
-      autoOpen: false,
-      show: {
-        effect: "blind",
-        duration: 1000
-      },
-      hide: {
-        effect: "drop",
-        duration: 1000
-      },
-      minWidth: 800
-    });
- 
-    $("#priorities-opener" ).on( "click", function() {
-      $("#priorities-dialog" ).dialog( "open" );
-    });
-
-  } );
-  </script>
-
 
 </head>
 
 <body>
-<?php  date_default_timezone_set("Europe/London");
-#phpinfo();
-?>
-      <div id="wrapper">
+
+      <div id="header">
 
       <header>
 
@@ -290,11 +223,12 @@ table {
       <h2>Management Tooling Assessment for <?php echo $_GET['name']; ?></h2>
       </center>
       </header>
-      
+
 <div id="content">       
     <div style="width:90%">
         <canvas id="canvas"></canvas>
     </div>
+      
         <script>
         
     function getQueryVariable(variable)
@@ -390,12 +324,16 @@ table {
     var colorNames = Object.keys(window.chartColors);
     </script>
 
+<p>SOME MORE STUFF ABOUT PRODUCTS GOES HERE (and uses imagemaps to highlight?)
+</p>
 </div>
+
 
 <div id="rightcol">
-<br>
-
+<p>DISPLAY SOME MORE INFO HERE ABOUT PRODUCT SELECTED
+</p>
 </div>
+
 <!-- end of main content div -->
 <!-- end of wrapper div -->
 
