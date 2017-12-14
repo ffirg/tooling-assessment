@@ -1,10 +1,10 @@
 # Management Tooling Assessment
 Run through a survey on current and future requirements from technology management tooling (using a simple web/php service).
-Create a natty diagram, overlay RH products and make suggestions around moving things foward :)
+Create a natty diagram, overlay RH products and make suggestions around moving things forward :)
 
 ## Installing
 
-Designed to be run inside a [minishift] container service.
+Designed to be run inside a minishift container service.
 
 ### Quick and Dirty
 ```
@@ -24,4 +24,4 @@ Go to the openshift console (can fire this up from the CLI using 'minishift cons
 Click on the tooling-assessment project
 Click on Overview.
 Create a Route (using all the defaults)
-Click on the openshift route exposed by the service and fill out the survey. Job done!
+Click on the openshift route exposed by the service and fill out the survey. Click Submit. Job done!

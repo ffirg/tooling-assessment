@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,23 +8,22 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
-<!--	<script src="js/jquery-1.10.2.js"></script>-->
-  <link rel="stylesheet" href="/resources/demos/style.css">
+<!--	<script src="js/jquery-1.10.2.js"></script> -->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
+
   <script>
   $( function() {
     $( "#tabs" ).tabs();
   } );
   </script>
-  
+
     <script>
   $( function() {
     $( "input" ).checkboxradio();
   } );
   </script>
-  
+
   <style>
       #locationField, #controls {
         position: relative;
@@ -67,12 +63,12 @@ session_start();
         height: 20px;
         margin-bottom: 2px;
       }
-      .page { position: absolute; 
-      	top: 10; 
-      	left: 100; 
-      	visibility: hidden; 
-      	} 
-      	
+      .page { position: absolute;
+      	top: 10;
+      	left: 100;
+      	visibility: hidden;
+      	}
+
 legend {
 
 }
@@ -88,17 +84,17 @@ label {
 input {
   border-radius: 15px;
   margin: 10px;
-} 	
+}
 
 h3 { color: #7c795d; font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 400; line-height: 32px; margin: 0 0 24px; }
 
 
 
-    </style>		
-    
+    </style>
 
-    
-    
+
+
+
 </head>
 <body>
 
@@ -145,7 +141,7 @@ h3 { color: #7c795d; font-family: 'Source Sans Pro', sans-serif; font-size: 28px
 
   <div id="tabs-1">
   <h3>Management Tooling Assessment.</h3>
-  
+
     <p>
 <b>AIM</b>: Help to assess current and future requirements around managing private, hybrid and cloud based infrastructure.
 </p>
@@ -193,20 +189,20 @@ To complete the assessment, please use the tabs and fill out all information. On
   </div>
 
   <div id="tabs-3">
-<div class="widget"> 
+<div class="widget">
   <fieldset>
     <legend>Content Management</legend>
     <p>This should include things like single sources of truth for application code, centralised OS, patch and config repositories.</p>
     <p><b>Current Position (0-10): </b><input type="number" name="d5" min="0" max="10"></p>
 <p><label>Comments: </label><input type="textarea" cols="30" rows="2" name="d5-text"></p>
   </fieldset>
- 
+
   <fieldset>
     <p><b>Future Position (0-10): </b><input type="number" name="o5" min="0" max="10"></p>
 <p>Best practices include: centralised SCM systems, CI/CD pipelining, automated content updates/refresh.</p>
 <p><label>Comments: </label><input type="textarea" cols="30" rows="2" name="o5-text"></p>
-  </fieldset> 
-</div>    
+  </fieldset>
+</div>
     </p>
   </div>
 
@@ -217,12 +213,12 @@ To complete the assessment, please use the tabs and fill out all information. On
 <p>Guidance for scoring: ...</p>
 <p><label>Comments: </label><input type="text" name="d4-text"></p>
   </fieldset>
- 
+
   <fieldset>
     <p><b>Future Position (0-10): </b><input type="number" name="o4" min="0" max="10"></p>
 <p>Guidance for scoring: ...</p>
 <p><label>Comments: </label><input type="text" name="o4-text"></p>
-  </fieldset> 
+  </fieldset>
   </div>
 
   <div id="tabs-5">
@@ -376,4 +372,3 @@ To complete the assessment, please use the tabs and fill out all information. On
 
 </body>
 </html>
-
