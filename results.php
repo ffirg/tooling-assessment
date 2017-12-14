@@ -21,6 +21,8 @@ body {
     font-family: 'trebuchet MS', 'Lucida sans', Arial;
     font-size: 14px;
     color: #444;
+    display: block;
+    margin: auto;
 }
 
 .header-contents {
@@ -38,7 +40,7 @@ position: static;
 clear: both;
 }
 
-.products {
+.product.info {
 float: right;
 position: static;
 }
@@ -121,7 +123,7 @@ position: static;
       </div>
   </div>
 
-  <div class="row chart-dashboard">
+  <div class="row main-contents">
       <div id="chart1" class="chart1 col-md-2">
         <script>
             var f = new JustGage({
@@ -169,11 +171,11 @@ position: static;
         });
         </script>
       </div>
-      <div id="product-info" class="product-info col-md-6"></div>
+      <div id="spacer" class="spacer col-md-6"></div>
     </div>
 
-<div class="row chart-main">
-  <div id="chart4" class="chart4 col-md-6">
+<!-- <div class="row chart-main"> -->
+  <div id="chart4" class="chart4 col-md-7">
       <img id="tooling-assessment-chart"></img>
     <script>
 
@@ -237,14 +239,9 @@ position: static;
         });
       </script>
 
-      </div>
     </div>
-  </div>
-
-  <div class="row product-contents">
-      <div id="products" class="products col-xs-6"></div>
-  </div>
-</div>
+      <div id="product-info" class="product-info col-md-5"></div>
+    </div>
 
 </body>
 </html>
