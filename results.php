@@ -116,9 +116,7 @@ position: static;
   <div class="row header-contents">
       <div id="header" class="header col-xs-12">
         <header>
-          <center>
             <h2>Management Tooling Assessment for <?php echo $_GET['name']; ?></h2>
-          </center>
         </header>
       </div>
   </div>
