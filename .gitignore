@@ -1,6 +1,7 @@
 highcharts.html
 hc.html
-justgage.js
 test.html
 results.php.cssbustup
 results.php.chartjs.old
+*.bust
+*.betasafe
